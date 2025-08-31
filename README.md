@@ -113,7 +113,7 @@ zip function.zip lambda_function.py
 aws lambda create-function \
   --function-name HelloWorldFunction \
   --runtime python3.12 \
-  --role arn:aws:iam::535002879962:role/lambda-basic-role \
+  --role ami-00ca32bbc84273381:role/lambda-basic-role \
   --handler lambda_function.lambda_handler \
   --zip-file fileb://function.zip
 ```
